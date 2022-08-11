@@ -1,0 +1,289 @@
+:root{
+    --mainColor:#e65f78;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--mainColor);
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+header{
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0, 0.6);
+}
+.headerImg{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 8px solid rgba(255,255,255,.08);
+}
+.layerContent span{
+    color: var(--mainColor);
+}
+header p::after ,.typing::after{
+    content:"";
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.typing::after{
+    color: var(--mainColor);
+}
+
+@keyframes typing{
+    0%,	33.33% {content: "";}
+    1.515%,	31.815% {content: "F";}
+    3.03%,	30.3% {content: "Fr";}
+    4.545%,	28.785% {content: "Fre";}
+    6.06%,	27.27% {content: "Free";}
+    7.575%,	25.755% {content: "Freel";}
+    9.09%,	24.24% {content: "Freela";}
+    10.605%,	22.725% {content: "Freelan";}
+    12.12%,	21.21% {content: "Freelanc";}
+    13.635%,	19.695% {content: "Freelance";}
+    15.15%,	18.18% {content: "Freelanner";}
+
+    33.33%,66.67%   {content: "";}
+    34.52%,65.48%   {content: "W";}
+    35.71%,64.29%   {content: "We";}
+    36.9%,63.1%   {content: "Web";}
+    38.09%,61.91%   {content: "Web ";}
+    39.28%,60.72%    {content: "Web D";}
+    40.47%,59.53%   {content: "Web De";}
+    41.66%,58.34%   {content: "Web Dev";}
+    42.85%,57.15%   {content: "Web Deve";}
+    44.04%,55.96% {content: "Web Devel";}
+    45.23%,54.77%   {content: "Web Develo";}
+    46.42%,53.58% {content: "Web Develop";}
+    47.61%,52.39% {content: "Web Develope";}
+    48.8%,51.2% {content: "Web Developer";}
+
+    66.67%,100% {content: "";}
+    67.95%,98.72% {content: "P";}
+    69.23%,97.44% {content: "Ph";}
+    70.51%,96.16% {content: "Pho";}
+    71.79%,94.88% {content: "Phot";}
+    73.07%,93.6% {content: "Photo";}
+    74.35%,92.32% {content: "Photog";}
+    75.63%,91.04% {content: "Photogr";}
+    76.91%,89.76% {content: "Photogra";}
+    78.19%,88.48% {content: "Photograp";}
+    79.47%,87.2% {content: "Photograph";}
+    80.75%,85.92% {content: "Photographe";}
+    82.03%,84.64% {content: "Photographer";}
+}
+.homeIcons .settigIcon {
+top: 20%;
+z-index: 9999;
+}
+ul{
+    padding: 0;
+}
+
+.title p{
+color: var(--mainColor);
+}
+.aboutMeBorder{
+    position: relative;
+}
+.aboutMeBorder::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -28px;
+    right: -28px;
+    border: 8px solid black;
+    z-index: -1;
+    border-radius: 5px;
+}
+li{
+    list-style-type: none;
+}
+
+
+
+
+
+button{
+    background-color: var(--mainColor);
+    padding: 10px 20px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    background-color: #E65F78;
+}
+button::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    left: -50px;
+    top: 0px;
+    height: 100%;
+    transform: skew(45deg);
+    background-color: rgba(255,255,255,0.1);
+    opacity: 1;
+    transition: all 0.5s;
+}
+button:hover::before {
+    width: 150%;
+}
+.aboutMeIcons{
+    color: var(--mainColor);
+}
+.serviceIcons{
+    color: var(--mainColor);
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.counter{
+    position: relative;
+    background-color: black;
+    height: 250px;
+}
+.counter::after{
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../images/ravenna.png);
+    background-size: auto;
+    background-position: center center;
+    opacity: 0.5;
+}
+.card{
+    background-color: #F8F9FA;
+    border: none;
+}
+.hover-card{
+    transition: all 1s;
+    overflow: hidden;
+}
+.hover-card:hover{
+    transform: rotate(10deg) scale(1.3);
+}          
+.nav-link:hover ,.news a:hover{
+    color:var(--mainColor)  !important;
+}
+.boxShadow{
+    transition: all 1s;
+}
+.boxShadow:hover{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+.letsStartedNow,.aboutMe ul a{
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+.letsStartedNow::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0,0, 0.2);
+}
+.letsStartedNow::after,.aboutMe ul a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    transition: all 0.5s;
+}
+.letsStartedNow:hover::after,.aboutMe ul a:hover::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: transparent !important;
+    color: black !important ;
+}
+.tooltip-inner{
+    background-color: red !important;
+}
+.counter p{
+    font-size: 20px;
+}
+.counter h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+.news p{
+    font-style: italic;
+}
+.title h3{
+    font-weight: bold;
+}
+.aboutMe ul{
+    column-count: 2;
+}
+
+@media screen and (max-width:600px){
+    .aboutMe ul{
+        column-count: 1;
+    }
+}
+
+.title{
+    margin-bottom: 50px;
+}
+
+section{
+    overflow: hidden;
+}
+.portfolioImg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 95%;
+    height: 95%;
+    overflow: hidden;
+}
+.portfolioImgInner{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all 1s;
+
+}
+.portfolioImgInner:hover{
+    transform: scale(1.2);
+}
+.img1{
+    background-image: url(../images/1\ \(2\).jpg);
+}
+.img2{
+    background-image: url(../images/2\ \(1\).jpg);
+}
+.img3{
+    background-image: url(../images/3.jpg);
+}
+.img4{
+    background-image: url(../images/4.jpg);
+}
+.img5{
+    background-image: url(../images/5.jpg);
+}
+.img6{
+    background-image: url(../images/6.jpg);
+}
